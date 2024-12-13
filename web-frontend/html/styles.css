@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #D8EFD3;
+    color: #333333;
+}
+
+.header {
+    background-color: #55AD9B;
+    color: white;
+    padding: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    box-shadow: 0px 2px 12px #676767; /* Efek bayangan */
+    margin-bottom: 20px;
+}
+
+.sub-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.profile-image {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.caption p {
+    margin: 10;
+    text-align: left;
+    color: #ffffff;
+    font-weight: bold;
+}
+.greeting {
+    font-size: 18px;
+}
+
+/* Mengatur paragraf deskripsi */
+.description {
+    font-size: 14px; /* Ukuran default */
+}
+
+.middle-section {
+    background-color: #D8EFD3;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.middle-section canvas {
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center; /* Vertical center */
+    margin: 25px;
+    height: 100vh; /* Membuat kontainer setinggi viewport */
+    width: 100%;      /* Lebar penuh */
+    max-width: 400px; /* Sesuaikan sesuai kebutuhan */
+}
+
+/* Ukuran canvas */
+#donutChart {
+    border-top: 200px;
+    width: 100%;      /* Sesuaikan lebar */
+    max-width: 300px; /* Batas lebar */
+    max-height: 300px;
+}
+
+.bottom-section {
+    background-color: #95D2B3;
+    padding: 20px;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    box-shadow: 0px -2px 12px #676767; /* Efek bayangan */
+    margin-top: 18px;
+}
+
+.image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.close-popup {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.badge {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.badge.red { background-color: #FF4D4D; }
+.badge.yellow { background-color: #FFD700; }
+.badge.green { background-color: #32CD32; }
+
+
+.history-header {
+    display: flex;
+    justify-content: space-between; /* Menyebarkan elemen ke kiri dan kanan */
+    align-items: center; /* Memastikan elemen berada pada posisi vertikal yang sama */
+    margin-bottom: 24px; /* Beri jarak antara header dan konten di bawahnya */
+}
+
+.history-header h2 {
+    margin: 0; /* Menghilangkan margin default */
+    margin-top: 24px;
+    font-size: 24px; /* Atur ukuran font untuk Riwayat */
+}
+
+.history-header h3 {
+    margin: 0; /* Menghilangkan margin default */
+    margin-top: 24px;
+    font-size: 18px; /* Atur ukuran font untuk 10 Aktivitas */
+    font-weight: normal; /* Opsional: atur ketebalan agar lebih kecil dari H2 */
+}
+
+.card {
+    background-color: #F1F8E8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur tampilan daftar aktivitas */
+.card ul {
+    list-style-type: disc; /* Menggunakan bullet point */
+    padding-left: 20px; /* Memberikan indentasi */
+    margin: 0;
+}
+
+.card ul li {
+    margin-bottom: 8px; /* Memberi jarak antar item */
+}
+
+/* Mengatur badge agar sedikit menjorok */
+.card ul li p {
+    display: flex;
+    justify-content: space-between; /* Menempatkan teks di kiri dan badge di kanan */
+    align-items: center;
+}
+
+.card h4 {
+    margin: 0 0 10px;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: transparent; /* Menghilangkan warna latar belakang */
+    font-size: 12px;
+    text-align: center;
+    display: inline-block; /* Agar width diterapkan */
+    width: 80px; /* Set lebar tetap untuk semua badge */
+    border: 3px solid; /* Menambahkan border */
+    color: inherit; /* Warna teks mengikuti warna border */
+}
+
+.red {
+    border-color: #FF4D4D;
+}
+
+.yellow {
+    border-color: #FFD700;
+}
+
+.green {
+    border-color: #32cd32;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Trash Bin</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <!-- Segmen Atas -->
+    <div class="header">
+        <h1>SMART TRASH BIN</h1>
+        <div class="sub-head">
+            <img src="Mascot-SATIN.png" alt="Satin" class="profile-image">
+            <div class="caption">
+                <p class= "greeting">Hai SATIN disini,</p>
+                <p class="description">Berikut data sampah terbuang yang sudah terkumpul lewat Smart Trash Bin!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segmen Tengah -->
+    <div class="middle-section">
+        <h2>Total Jenis Sampah Terkumpul</h2>
+        <canvas id="donutChart"></canvas>
+    </div>
+    
+    <!-- Segmen Bawah -->   
+    <div class="bottom-section">
+        <div class="history-header">
+            <h2>Riwayat</h2>
+            <h3>5 Aktivitas</h3>
+        </div>
+        <div class="card">
+            <h4>Minggu, 20 Oktober 2024</h4>
+            <ul>
+                <li><p>Pukul 07.46 - Kaleng <span class="badge red">Tong Merah</span></p></li>
+                <li><p>Pukul 09.12 - Karton <span class="badge yellow">Tong Kuning</span></p></li>
+                <li><p>Pukul 14.30 - Botol Plastik <span class="badge green">Tong Hijau</span></p></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4>Sabtu, 19 Oktober 2024</h4>
+            <ul>
+                <li><p>Pukul 09.30 - Karton <span class="badge yellow">Tong Kuning</span></p></li>
+                <li><p>Pukul 11.00 - Botol Plastik <span class="badge green">Tong Hijau</span></p></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
